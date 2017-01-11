@@ -11,4 +11,16 @@
   {{/link-to}}
 </article>
 
+<h1> List filter </h2>
+{{#list-filter
+   filter=(action 'filterByTitle')
+   as |zines|}}
+  <ul class="results">
+    {{#each zines as |zineItem|}}
+      <li>{{zine-listing zine=zineItem}}</li>
+    {{/each}}
+  </ul>
+{{/list-filter}}
+
+
 {{outlet}}

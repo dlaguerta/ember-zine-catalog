@@ -1,1 +1,8 @@
+<h1> Welcome To the Zine Union Catalog </h1>
+<h2> Recently Added Zines </h2>
+
+{{#each model as |zineItem|}}
+  {{zine-listing zine=zineItem}}
+{{/each}}
+
 {{outlet}}

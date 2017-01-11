@@ -1,0 +1,21 @@
+h1, h2 {
+  text-align: center;
+}
+
+.menu {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: rgb(245, 233, 82);
+  text-align: right;
+}
+
+.nav-links li, a {
+  display: inline;
+  list-style: none;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.nav-link li a:hover {
+  background-color: red;
+}

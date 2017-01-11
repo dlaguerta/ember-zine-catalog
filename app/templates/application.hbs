@@ -1,18 +1,19 @@
 <div class="container">
   <div class="menu">
-    <div class="left links">
+    <ul class="nav-links">
 			{{#link-to 'index'}}
-	      <h1 class="left">
-	        Home
-	      </h1>
+	        <li>Home</li>
 	    {{/link-to}}
+			{{#link-to 'zines'}}
+					<li>Zine Catalog</li>
+			{{/link-to}}
       {{#link-to 'about'}}
-        About
+        <li>About</li>
       {{/link-to}}
       {{#link-to 'contact'}}
-        Contact
+        <li>Contact</li>
       {{/link-to}}
-    </div>
+    </ul>
   </div>
   <div class="body">
     {{outlet}}

@@ -1,6 +1,10 @@
 <div>
   <h2>Current Catalog</h2>
   <p>Here are our current zines in the collection, from across various libraries.</p>
+
+  {{#each model as |zineItem|}}
+  {{zine-listing zine=zineItem}}
+  {{/each}}
   {{#link-to 'about' class="button"}}
     About Us
   {{/link-to}}

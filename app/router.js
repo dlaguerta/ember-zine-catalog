@@ -9,7 +9,9 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('contact');
-  this.route('zines', function() {});
+  this.route('zines', function() {
+    this.route('show', { path: '/:zine_id' });
+  });
 });
 
 export default Router;

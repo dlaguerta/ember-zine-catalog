@@ -1,8 +1,13 @@
 <div class="show-listing">
-  <h2 class="title">{{model.title}}</h2>
-<div class="creator">
-    <strong>Creator:</strong> {{model.creator}}
-</div>
+  <h2 class="title">{{model.title}} {{model.subtitle}}</h2>
+<ul class="zine-metadata">
+    <li><strong>Creator:</strong> {{model.creator}}</li>
+    <li>Subject/Genre: {{model.subject_genre}}</li>
+    <li>Date: {{model.date}} </li>
+    <li>Place of Publication: {{model.place_of_publication}}</li>
+    <li>Volume: {{model.volume}} <span>Number: {{model.number}}</span></li>
+    <li> Tags: {{model.tags}} </li> 
+</ul>
 </div>
 
 

@@ -1,8 +1,10 @@
 <article class="listing">
-  <h3>{{#link-to "zines.show" zine}}{{zine.title}}{{/link-to}}</h3>
+  <h3>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h3>
   <div>
-    <span>Creator:</span> {{zine.creator}}
-    <span>Libraries:</span> {{zine.library_id}}
+      <span><b>Creator:</b></span> {{zine.creator}}
+  </div>
+  <div class="">
+      <span>Libraries:</span> {{zine.library_id}}
   </div>
 
 </article>

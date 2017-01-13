@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('zines', function() {
     this.route('show', { path: '/:zine_id' });
   });
+  this.route('libraries');
 });
 
 export default Router;

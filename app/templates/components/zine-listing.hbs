@@ -1,11 +1,8 @@
-<article class="listing">
+<article class="listing row small-up-1 medium-up-2 large-up-4">
   <h3>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h3>
-  <div>
-      <span><b>Creator:</b></span> {{zine.creator}}
-  </div>
-  <div class="">
-      <span>Libraries:</span> {{zine.library_id}}
-  </div>
-
+  <ul class="column zine-metadata">
+      <li><b>Creator:</b></li> {{zine.creator}}
+      <li>Libraries:</li> {{zine.library_id}}
+  </ul>
 </article>
 {{yield}}

@@ -1,7 +1,6 @@
 <h2> All Participating Libraries </h2>
-{{#each model as |libraryItem|}}
-  <h3>{{#link-to "libraries.show" library}}{{libraryItem.name}}{{/link-to}}</h3>
 
-  <h3>Library id: {{libraryItem.name}}</h3>
+{{#each model as |libraryUnit|}}
+  {{library-listing  library=libraryUnit}}
 {{/each}}
 {{outlet}}

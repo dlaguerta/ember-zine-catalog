@@ -14,7 +14,7 @@
 <h1> Current Zine Catalog</h1>
 <p> Start a quick search by title in the search bar below! </p>
 {{#list-filter
-   filter=(action 'filterByTitle')
+   filter=(action 'filterByTags')
    as |zines|}}
   <ul class="results">
     {{#each zines as |zineItem|}}

@@ -2,9 +2,9 @@ import Ember from 'ember';
 //import the controller from eariler
 export default Ember.Controller.extend({
   actions: {
-   filterByTitle(param) {
+   filterByTags(param) {
      if (param !== '') {
-       return this.get('store').query('zine', { title: param });
+       return this.get('store').query('zine', { tags: param });
      } else {
        return this.get('store').findAll('zine');
      }

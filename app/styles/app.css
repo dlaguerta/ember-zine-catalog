@@ -7,6 +7,10 @@ h1, h2 {
   font-family: 'Cormorant Garamond';
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu {
   padding: 10px;
   border-radius: 3px;
@@ -35,6 +39,10 @@ h1, h2 {
   margin: 1%;
   padding: 5%;
   border-radius: 4px;
+}
+
+.listing h4 {
+  text-align: center;
 }
 
 .zine-metadata {

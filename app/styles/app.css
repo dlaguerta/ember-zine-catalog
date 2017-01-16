@@ -46,7 +46,9 @@ a:hover {
   border-radius: 4px;
   border: 5px solid black;
   outline: 5px solid #e3e3e3;
+  max-width: 97%;
 }
+
 
 .listing h4 {
   text-align: center;

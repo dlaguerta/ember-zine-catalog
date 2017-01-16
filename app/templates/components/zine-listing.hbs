@@ -2,6 +2,7 @@
   <h4>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h4>
   <ul class="zine-metadata">
       <li><b>Creator:</b></li> {{zine.creator}}
+      <li>Content tags: {{zine.tags}}</li>
       <li>Libraries:</li> {{#link-to "libraries.show" zine.library_ids}}{{zine.library_ids}}
       {{/link-to}}
   </ul>

@@ -3,7 +3,7 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   title: DS.attr('string'),
   creator: DS.attr('string'),
-  library_ids: DS.attr( ),
+  library_ids: DS.attr('string'),
   sub_title: DS.attr('string'),
   volume: DS.attr('number'),
   number: DS.attr('number'),

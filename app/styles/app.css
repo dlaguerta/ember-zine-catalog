@@ -11,11 +11,16 @@ a {
   text-decoration: none;
 }
 
-.menu {
+.menu, .nav-links a  {
   padding: 10px;
   border-radius: 3px;
-  background-color: rgb(245, 233, 82);
+  background-color: #855085;
+  color: white;
   text-align: right;
+}
+
+a:hover {
+  color: rgb(184, 240, 255);
 }
 
 .nav-links li, a {

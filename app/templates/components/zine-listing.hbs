@@ -8,8 +8,9 @@
       <li><b>Creator: </b> {{zine.creator}}</li>
       <li><b>Subject/Genre: </b> {{zine.subject_genre}}</li>
       <li><b>Content tags: </b>  {{zine.tags}}</li>
-      <li>Libraries: {{#link-to "libraries.show" zine.library_ids}}{{zine.libraries}}
+      <li>Libraries: {{#link-to "libraries.show" zine.library_ids}}{{ zine.library_ids}}
       {{/link-to}}
+      <li>Libraries attribute: {{zine.libraries.length}}</li>
       </li>
   </ul>
   </article>

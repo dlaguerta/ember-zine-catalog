@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-
   //moved to controllers/zines/index
  //  actions: {
  //   filterByTitle(param) {

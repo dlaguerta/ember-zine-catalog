@@ -1,10 +1,17 @@
-<article class="listing row small-up-1 medium-up-2 large-up-3">
-  <h4>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h4>
+<div class="listing">
+<article class="listing-cell">
+  <h6>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h6>
   <ul class="zine-metadata">
-      <li><b>Creator:</b></li> {{zine.creator}}
-      <li>Content tags: {{zine.tags}}</li>
-      <li>Libraries:</li> {{#link-to "libraries.show" zine.library_ids}}{{zine.library_ids}}
+      <div class="photo-placeholder">
+        Zine Cover
+      </div>
+      <li><b>Creator: </b> {{zine.creator}}</li>
+      <li><b>Subject/Genre: </b> {{zine.subject_genre}}</li>
+      <li><b>Content tags: </b>  {{zine.tags}}</li>
+      <li>Libraries: {{#link-to "libraries.show" zine.library_ids}}{{zine.library_ids}}
       {{/link-to}}
+      </li>
   </ul>
-</article>
+  </article>
+</div>
 {{yield}}

@@ -14,4 +14,5 @@ export default DS.Model.extend({
   contributor: DS.attr('string'),
   subject_genre: DS.attr('string'),
   press_house_publisher: DS.attr('string'),
+  libraries: DS.hasMany('library', {async: true})
 });

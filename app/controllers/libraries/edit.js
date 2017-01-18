@@ -2,9 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-      save:function(model) {
+      save: function() {
         console.log('clicked button to save');
-        console.log(model);
+        //need to figure out how to pass input here
     }
   }
 });

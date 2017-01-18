@@ -14,6 +14,8 @@ Router.map(function() {
   });
   this.route('libraries', function() {
     this.route('show',{ path: '/:library_id' });
+    this.route('edit',{ path: '/:library_id/edit' });
+
   });
 });
 

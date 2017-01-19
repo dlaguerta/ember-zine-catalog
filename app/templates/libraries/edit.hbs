@@ -1,4 +1,4 @@
-<form {{action 'saveLibrary' on="submit"}}>
+<form>
 <h1>Edit {{model.name}}</h1>
 
 
@@ -6,7 +6,7 @@ Name: {{input value=model.name }}
 City: {{input value=model.city }}
 State: {{input value=model.state }}
 
-<button type="submit" class="button">Save me </button>
+<button type="submit" class="button" {{action 'saveLibrary' model}}>Save me </button>
 </form>
 
 {{outlet}}

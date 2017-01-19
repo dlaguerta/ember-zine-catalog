@@ -8,6 +8,8 @@ let App;
 Ember.MODEL_FACTORY_INJECTIONS = true;
 
 App = Ember.Application.extend({
+  LOG_RESOLVER: true,
+  LOG_TRANSITIONS: true,
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
   Resolver

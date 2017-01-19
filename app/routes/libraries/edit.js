@@ -13,17 +13,17 @@ export default Ember.Route.extend({
     controller.set("model", model);
   },
 
-  actions: {
-      saveLibrary(parameter) {
-
-        console.log(parameter);
-        parameter.get('hasDirtyAttributes'); //=> true
-        parameter.changedAttributes();
-        parameter.save().then(function(){
-
-          console.log('success?');
-        });
-        //need to figure out how to pass input here
-    }
-  }
+  // actions: {
+  //     saveLibrary(parameters) {
+  //
+  //       console.log("PARAMETERS:::" + parameters);
+  //       console.log("PARAMETERS:::" + parameters.get("name"));
+  //       parameters.changedAttributes();
+  //       parameters.save().then(function(){
+  //
+  //         console.log('success?');
+  //       });
+  //       //need to figure out how to pass input here
+  //   }
+  // }
 });

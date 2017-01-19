@@ -16,12 +16,4 @@ export default Ember.Controller.extend({
   //   }
   // }
 });
-// this.get('store').findRecord('library', params.library_id) .then(function(library) {
-//   library.get('name'); // => "Rails is Omakase"
-//
-//   library.set('name', 'A new library');
-//
-//   library.save(); // => PATCH to '/posts/1'
-// });
-// }
-// }
+

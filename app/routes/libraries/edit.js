@@ -9,6 +9,7 @@ export default Ember.Route.extend({
   },
 
   setupController (controller, model) {
+     this._super(controller, model);
     controller.set("model", model);
   },
 

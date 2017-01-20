@@ -4,7 +4,6 @@ export default Ember.Route.extend({
   model(params) {
     // console.log(params);
     return this.store.findRecord('library', params.library_id);
-    // return this.modelFor('library');
   },
 
   setupController (controller, model) {

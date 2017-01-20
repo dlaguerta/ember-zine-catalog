@@ -1,11 +1,11 @@
-<form method="put" {{action 'saveLibrary' model}}>
+<form method="put">
 <h1>Edit {{model.name}}</h1>
 
 Name:{{input value=model.name }}
 City: {{input value=model.city }}
 State: {{input value=model.state }}
 <!--Placed submit here-->
-<button type="submit" class="button" >Save me </button>
+<button type="submit" class="button" method="put" {{action 'saveLibrary' model}} >Save me </button>
 </form>
 
 {{outlet}}

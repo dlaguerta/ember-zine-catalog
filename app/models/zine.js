@@ -1,5 +1,4 @@
 import DS from 'ember-data';
-var attr = DS.attr;
 export default DS.Model.extend({
   title: DS.attr('string'),
   creator: DS.attr('string'),

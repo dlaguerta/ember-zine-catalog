@@ -4,6 +4,6 @@ Description here from model
   <li>Location: {{model.city}}, <span> State: {{model.state}} </span>
   </li>
 </ul>
-{{#link-to 'libraries.edit' model}}Edit Library Info for {{model.name}}  {{/link-to}}
+{{#link-to 'libraries.edit' model.id}}Edit Library Info for {{model.name}}  {{/link-to}}
 
 {{outlet}}

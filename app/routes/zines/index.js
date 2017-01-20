@@ -7,6 +7,6 @@ export default Ember.Route.extend({
     // return Ember.RSVP.hash({
     //  zines: this.store.findAll('zine'),
     //  libraries: this.store.findAll('library')
-   });
+  //  });
   }
 });

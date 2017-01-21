@@ -1,6 +1,6 @@
 import Ember from 'ember';
 //import the controller from eariler
-import pagedArray from 'ember-cli-pagination/computed/paged-array';
+// import pagedArray from 'ember-cli-pagination/computed/paged-array';
 export default Ember.Controller.extend({
   actions: {
    filterByTags(param) {
@@ -11,8 +11,9 @@ export default Ember.Controller.extend({
      }
    }
  },
- queryParams: ["page","perPage"],
-  page: 1,
-
-  pageBinding: Ember.computed.oneWay("content.page")
+ //for pagination addon
+ // queryParams: ["page","perPage"],
+ //  page: 1,
+ //
+ //  pageBinding: Ember.computed.oneWay("content.page")
 });

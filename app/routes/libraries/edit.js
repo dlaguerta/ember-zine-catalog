@@ -8,7 +8,6 @@ export default Ember.Route.extend({
 
   setupController (controller, model) {
      this._super(controller, model);
-    // controller.set("model", model);
   },
 
   //try placing the action here if it does not activate in controller

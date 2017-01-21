@@ -12,6 +12,11 @@ export default DS.Model.extend({
   tags: DS.attr('string'),
   contributor: DS.attr('string'),
   subject_genre: DS.attr('string'),
-  press_house_publisher: DS.attr('string'),
+  press_house_publisher : DS.attr('string'),
+  physical_description  : DS.attr('string'),
+  contact               : DS.attr('string'),
+  content_description_notes:DS.attr('string'),
+  see_also: DS.attr('string'),
+  photo: DS.attr('string'),
   libraries: DS.hasMany('library', {async: true})
 });

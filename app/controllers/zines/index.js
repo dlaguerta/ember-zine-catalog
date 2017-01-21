@@ -1,5 +1,6 @@
 import Ember from 'ember';
 //import the controller from eariler
+import pagedArray from 'ember-cli-pagination/computed/paged-array';
 export default Ember.Controller.extend({
   actions: {
    filterByTags(param) {
@@ -9,5 +10,9 @@ export default Ember.Controller.extend({
        return this.get('store').findAll('zine');
      }
    }
- }
+ },
+ queryParams: ["page","perPage"],
+  page: 1,
+
+  pageBinding: Ember.computed.oneWay("content.page")
 });

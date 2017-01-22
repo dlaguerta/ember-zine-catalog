@@ -1,22 +1,21 @@
-<div class="container">
-  <div class="menu">
-    <ul class="nav-links">
-			{{#link-to 'index'}}
-	        <li>Home</li>
-	    {{/link-to}}
-			{{#link-to 'zines'}}
-					<li>Zine Catalog</li>
-			{{/link-to}}
-      {{#link-to 'about'}}
-        <li>About</li>
-      {{/link-to}}
-      {{#link-to 'contact'}}
-        <li>Contact</li>
-      {{/link-to}}
-      {{#link-to 'libraries'}} <li>Libraries</li> {{/link-to}}
-    </ul>
-  </div>
-  <div class="body">
-    {{outlet}}
-  </div>
+<nav class="menu">
+  <ul class="nav-links">
+    {{#link-to 'index'}}
+    <li>Home</li>
+    {{/link-to}}
+    {{#link-to 'zines'}}
+    <li>Zine Catalog</li>
+    {{/link-to}}
+    {{#link-to 'about'}}
+    <li>About</li>
+    {{/link-to}}
+    {{#link-to 'contact'}}
+    <li>Contact</li>
+    {{/link-to}}
+    {{#link-to 'libraries'}} <li>Libraries</li> {{/link-to}}
+  </ul>
+</nav>
+<div class="body">
+  {{outlet}}
 </div>
+

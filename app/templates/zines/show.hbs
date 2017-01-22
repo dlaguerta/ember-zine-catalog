@@ -1,7 +1,10 @@
 <article class="row">
 
 <section class="show-listing small-2 large-5 columns">
-  <h2 class="title">{{model.title}}{{#if model.sub_title}} : {{model.sub_title}}{{/if}}</h2>
+  <h2 class="title">{{model.title}}
+    {{#if model.sub_title}} : {{model.sub_title}}
+    {{/if}}
+  </h2>
   <img src={{model.photo}}/>
 <ul class="zine-metadata">
     <li><strong>Creator:</strong> {{model.creator}}</li>
@@ -12,13 +15,29 @@
 
     <li>Subject/Genre: {{model.subject_genre}}</li>
 
-    <li>Date: {{model.date}} {{#if circa_date}} (Circa) {{/if}} </li>
-
+    {{#if model.date}}
+      <li>Date: {{model.date}}
+        {{#if circa_date}} (Circa) {{/if}}
+      </li>
+      {{else }}
+        Date: Unknown
+      {{/if}}
     <li>Place of Publication: {{model.place_of_publication}}</li>
 
-    <li>Volume: {{model.volume}} <span>Number: {{model.number}}</span></li>
+    <li>
+      {{#if model.volume}} Volume: {{model.volume}}
+      {{/if}}
+    </li>
+    <li>
+      {{#if model.number}}  Number: {{model.number}}
+      {{/if}}
+    </li>
 
     <li> Tags: {{model.tags}} </li>
+
+    <li>
+      Physical description: {{model.physical_description}}
+    </li>
 </ul>
 </section>
 

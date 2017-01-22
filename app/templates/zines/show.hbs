@@ -5,7 +5,11 @@
   <img src={{model.photo}}/>
 <ul class="zine-metadata">
     <li><strong>Creator:</strong> {{model.creator}}</li>
-    
+    {{#if model.contributor}}
+    <li>Contributors: {{ model.contributor}}</li>
+      {{/if}}
+
+
     <li>Subject/Genre: {{model.subject_genre}}</li>
 
     <li>Date: {{model.date}} </li>

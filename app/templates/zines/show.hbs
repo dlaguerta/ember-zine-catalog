@@ -1,4 +1,7 @@
-<div class="show-listing">
+<article class="row">
+
+
+<section class="show-listing small-2 large-4 columns">
   <h2 class="title">{{model.title}} {{model.subtitle}}</h2>
 <ul class="zine-metadata">
     <li><strong>Creator:</strong> {{model.creator}}</li>
@@ -8,7 +11,12 @@
     <li>Volume: {{model.volume}} <span>Number: {{model.number}}</span></li>
     <li> Tags: {{model.tags}} </li>
 </ul>
-</div>
+</section>
 
+<section class="associated-library offset-1 small-2 large-4 columns">
+  <h2>Associated Library</h2>
+  <p>Library Info goes here</p>
+</section>
 
+</article>
 {{outlet}}

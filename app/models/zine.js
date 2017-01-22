@@ -18,5 +18,5 @@ export default DS.Model.extend({
   content_description_notes:DS.attr('string'),
   see_also: DS.attr('string'),
   photo: DS.attr('string'),
-  libraries: DS.hasMany('library', {async: true})
+  // libraries: DS.hasMany('library', {async: true})
 });

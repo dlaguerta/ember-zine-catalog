@@ -1,14 +1,15 @@
 <div class="listing">
 <article class="listing-cell">
-  <h6>{{#link-to "zines.show" zine}}{{zine.title}} <span>{{zine.sub_title}}</span>{{/link-to}}</h6>
+
   <ul class="zine-metadata">
       <div class="photo-placeholder">
         Zine Cover
       </div>
+      <h4 class="zine-headings">{{#link-to "zines.show" zine}}{{zine.title}} <span class="zine-headings">{{zine.sub_title}}</span>{{/link-to}}</h4>
       <li><b>Creator: </b> {{zine.creator}}</li>
       <li><b>Subject/Genre: </b> {{zine.subject_genre}}</li>
       <li><b>Content tags: </b>  {{zine.tags}}</li>
-      
+
   </ul>
   </article>
 </div>

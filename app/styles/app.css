@@ -84,6 +84,13 @@ a:hover {
 .results {
   list-style: none;
 }
+
+.zine-headings a, h4, span{
+  font-family: 'Cormorant Garamond';
+  text-align: center;
+}
+
+
 /* style for entire div: .list-filter {
   border-radius: 5px;
   border: 4px solid red;

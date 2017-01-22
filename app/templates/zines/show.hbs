@@ -1,7 +1,7 @@
 <article class="row">
 
 <section class="show-listing small-2 large-5 columns">
-  <h2 class="title">{{model.title}} {{model.subtitle}}</h2>
+  <h2 class="title">{{model.title}}{{#if model.sub_title}} : {{model.sub_title}}{{/if}}</h2>
   <img src={{model.photo}}/>
 <ul class="zine-metadata">
     <li><strong>Creator:</strong> {{model.creator}}</li>
@@ -12,7 +12,7 @@
 
     <li>Subject/Genre: {{model.subject_genre}}</li>
 
-    <li>Date: {{model.date}} </li>
+    <li>Date: {{model.date}} {{#if circa_date}} (Circa) {{/if}} </li>
 
     <li>Place of Publication: {{model.place_of_publication}}</li>
 

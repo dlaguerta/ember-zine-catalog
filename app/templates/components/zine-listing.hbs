@@ -10,7 +10,12 @@
       <li><b>Creator: </b> {{zine.creator}}</li>
       <li><b>Subject/Genre: </b> {{zine.subject_genre}}</li>
       <li><b>Content tags: </b>  {{zine.tags}}</li>
-      <li><b>Associated Libraries: </b>  {{zine.libraries.name}}</li>
+      <li><b>Associated Libraries: </b>
+        
+        {{#link-to "libraries.show" zine.libraries}}
+        {{zine-contributors zine.libraries}}
+        {{/link-to}}
+        </li>
 
   </ul>
   </article>

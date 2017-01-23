@@ -19,7 +19,6 @@ export default DS.Model.extend({
   see_also: DS.attr('string'),
   photo: DS.attr('string'),
   // libraries: DS.hasMany('library', {async: true})
-  libraries: DS.hasMany('library')
   //a libraries that is blank just shows the object id
-  // libraries: DS.attr()
+  libraries: DS.attr('string'),
 });

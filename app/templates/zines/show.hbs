@@ -43,7 +43,10 @@
 
 <section class="associated-library offset-1 small-2 small-offset-5 large-3 large-offset-2 columns end">
   <h2>Associated Library</h2>
-  <p>Library Info goes here</p>
+  {{#link-to "libraries.show" model.libraries}}
+  {{zine-contributors zine.libraries}}
+  {{/link-to}}
+
 </section>
 
 </article>

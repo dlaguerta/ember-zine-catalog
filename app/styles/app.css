@@ -3,19 +3,23 @@
   font-family: 'Proza Libre';
 }
 
+body {
+  /*background-color: #CFC7D2;*/
+}
+
 .column, .columns {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   font-family: 'Cormorant Garamond';
 }
 
 a {
   text-decoration: none;
-  color: rgb(115, 23, 61);
+  color: #3D314A;
 }
 
 .menu {
@@ -70,7 +74,11 @@ a:hover {
 .listing-cell {
   display: table-cell;
   vertical-align: middle;
+  /*border-top: 1px black solid;*/
+
 }
+
+
 
 .photo-placeholder {
   background-color: grey;
@@ -94,6 +102,14 @@ a:hover {
 .zine-headings a, h4, span{
   font-family: 'Cormorant Garamond';
   text-align: center;
+  margin: 15px;
+
+}
+
+.library-photo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
 }
 
 /*.associated-library {

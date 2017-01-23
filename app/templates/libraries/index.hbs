@@ -1,6 +1,13 @@
+<article class="small-10 small-centered columns">
+
 <h2> All Participating Libraries </h2>
 
+<ul class="small-block-grid-2">
 {{#each model as |libraryUnit|}}
+<li class="zine-metadata">
   {{library-listing  library=libraryUnit}}
+</li>
 {{/each}}
+</ul>
+</article>
 {{!outlet}}

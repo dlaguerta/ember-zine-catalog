@@ -1,10 +1,15 @@
+<article class="small-11 small-centered columns">
+
+
 <h1>{{model.name}}</h1>
-<img src='../../assets/images/flywheelibrary.jpg'/>
-<p>{{model.description  }}</p>
+<img src='../../assets/images/flywheelibrary.jpg' class="library-photo"/>
+<!-- <img src="{{!model.photo}}"/> -->
+
+<p>{{model.description}}</p>
 <ul>
-  <li>Location: {{model.city}}, <span> State: {{model.state}} </span>
+  <li>Location: {{model.city}},  {{model.state}}
   </li>
 </ul>
 {{#link-to 'libraries.edit' model.id}}Edit Library Info for {{model.name}}  {{/link-to}}
-
+</article>
 {{outlet}}

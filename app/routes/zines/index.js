@@ -10,7 +10,7 @@ export default Ember.Route.extend({
     zines: this.store.findAll('zine'),
     //with metadata changes
     //  zines: this.store.findAll('zine', {limit: 10, offset: 10}),
-     libraries: this.store.findAll('library')
+    //  libraries: this.store.findAll('library')
    });
   }
 });

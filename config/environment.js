@@ -18,7 +18,7 @@ module.exports = function(environment) {
     },
     contentSecurityPolicy: {
     //  'connect-src' : "'self' http://localhost:4500"
-    'connect-src': "'self' *",
+    'connect-src': ["'self'", "http://zinedreamapi.6muxddjjbp.us-west-2.elasticbeanstalk.com/api"]
    },
 
     APP: {

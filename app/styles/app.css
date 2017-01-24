@@ -11,13 +11,33 @@ body {
   border: 1px black solid;
 
 }
+.welcome-img {
+  position: relative;
+     width: 100%;
+}
 
+.welcome h1 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 300px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  width: 100%;
+}
+.welcome span {
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+   padding: 7px;
+}
 .about-project {
 
 }
 
 .view-all {
-  
+
 }
 
 .column, .columns {

@@ -4,61 +4,17 @@
 }
 
 .welcome-img {
-  position: relative;
+  /*position: relative;*/
   width: 100%;
   height: 100%;
-  margin: 20px 15px 0px 0px;
-}
-
-.welcome h1 {
-  display: inline;
-  position: absolute;
-  text-align: left;
-  float: left;
-  top: 300px;
-  bottom: 0;
-  color: white;
-  margin-left: 30px;
-  width: 100%;
-  padding: 2px;
-}
-.welcome span {
-  background: rgba(0, 0, 0, 0.7);
-  letter-spacing: -1px;
-   padding: 7px;
-}
-#browse {
-  display: block;
-  position: absolute;
-  text-align: left;
-  float: left;
-  top: 230px;
-  bottom: 0;
-  color: white;
-  margin-left: 30px;
-  /*width: 100%;*/
-}
-
-#browse-2 {
-  display: block;
-  position: absolute;
-  text-align: left;
-  float: left;
-  top: 400px;
-  bottom: 0;
-  color: white;
-  margin-left: 30px;
-  background-color:
+  margin: 40px 15px 0px 0px;
 }
 
 .aside-img-1 {
   position: relative;
   max-width: 100%;
   height: 250px;
-  /*margin-top: 55px;*/
-  /*transform: scale(1, 1.2);*/
-  /*max-height: 100%;*/
-  margin: 20px 20px 5px 20px;
+  margin: 0px 20px 5px 20px;
 }
 .aside-img-2 {
   position: relative;
@@ -71,24 +27,7 @@
   /*margin: 20px;*/
 }
 
-.side-section span {
-  background: rgba(0, 0, 0, 0.7);
-  letter-spacing: -1px;
-  padding: 7px;
-  margin-left: 5px;
-}
 
-
-.view-all {
-  /*display: block;*/
-  /*top: 200px;
-  bottom: 0;
-  margin-right: 10px;*/
-  /*color: white;*/
-  /*margin-left: 30px;*/
-  /*position: absolute;*/
-  /*float: right;*/
-}
 
 .column, .columns {
   padding-left: 0.9375rem;
@@ -203,4 +142,65 @@ a:hover {
   border-radius: 5px;
   border: 4px solid red;
   max-width: 50%;
+}*/
+
+/*To Use for INDEX CSS w/o images*/
+
+/*.welcome h1 {
+  display: inline;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 300px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  width: 100%;
+  padding: 2px;
+}
+.welcome span {
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+   padding: 7px;
+}
+#browse {
+  display: block;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 230px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  /*width: 100%;
+}*/
+
+/*#browse-2 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 400px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  background-color:
+}*/
+/*.side-section span {
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+  padding: 7px;
+  margin-left: 5px;
+}*/
+
+
+/*.view-all {
+  /*display: block;*/
+  /*top: 200px;
+  bottom: 0;
+  margin-right: 10px;*/
+  /*color: white;*/
+  /*margin-left: 30px;*/
+  /*position: absolute;*/
+  /*float: right;
 }*/

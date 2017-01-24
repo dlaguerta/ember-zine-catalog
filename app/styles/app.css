@@ -6,6 +6,19 @@
 body {
   /*background-color: #CFC7D2;*/
 }
+.welcome {
+  display: block;
+  border: 1px black solid;
+
+}
+
+.about-project {
+
+}
+
+.view-all {
+  
+}
 
 .column, .columns {
   padding-left: 0.9375rem;

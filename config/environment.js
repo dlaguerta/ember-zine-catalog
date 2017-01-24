@@ -17,7 +17,8 @@ module.exports = function(environment) {
       }
     },
     contentSecurityPolicy: {
-     'connect-src' : "'self' http://localhost:4500"
+    //  'connect-src' : "'self' http://localhost:4500"
+    'connect-src': "'self' *",
    },
 
     APP: {

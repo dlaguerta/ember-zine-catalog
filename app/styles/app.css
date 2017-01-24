@@ -17,7 +17,7 @@ body {
 }
 
 .welcome h1 {
-  display: block;
+  display: inline;
   position: absolute;
   text-align: left;
   float: left;
@@ -36,8 +36,23 @@ body {
 
 }
 
-.view-all {
+.aside-img {
+  position: relative;
+  max-width: 100%;
+  margin-top: 55px;
+  transform: scale(1, 1.2);
+  /*max-height: 100%;*/
+}
 
+.view-all {
+  /*display: block;*/
+  /*top: 200px;
+  bottom: 0;
+  margin-right: 10px;*/
+  /*color: white;*/
+  /*margin-left: 30px;*/
+  /*position: absolute;*/
+  /*float: right;*/
 }
 
 .column, .columns {

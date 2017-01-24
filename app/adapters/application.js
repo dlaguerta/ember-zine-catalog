@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
 	namespace: 'api',
-	host: 'http://zinedreamapi.6muxddjjbp.us-west-2.elasticbeanstalk.com/',
+	host: 'https://zinedreamapi.6muxddjjbp.us-west-2.elasticbeanstalk.com/',
 	//uncomment if you need this later
  // extractMeta: function(store, type, payload) {
  //  if (payload && payload.total) {

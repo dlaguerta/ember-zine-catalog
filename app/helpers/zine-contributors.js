@@ -4,8 +4,10 @@ export function zineContributors([libraries]/*, hash*/) {
 
   if (libraryIDS.includes(libraries)) {
     return 'Flywheel Zine Library';
-    }
+  } else
+    {
     return 'Queer Zine Archive Project';
+  }
 }
 
 export default Ember.Helper.helper(zineContributors);

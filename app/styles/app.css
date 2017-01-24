@@ -3,17 +3,11 @@
   font-family: 'Proza Libre';
 }
 
-body {
-  /*background-color: #CFC7D2;*/
-}
-.welcome {
-  display: block;
-  border: 1px black solid;
-
-}
 .welcome-img {
   position: relative;
-     width: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 20px 15px 0px 0px;
 }
 
 .welcome h1 {
@@ -26,23 +20,64 @@ body {
   color: white;
   margin-left: 30px;
   width: 100%;
+  padding: 2px;
 }
 .welcome span {
   background: rgba(0, 0, 0, 0.7);
   letter-spacing: -1px;
    padding: 7px;
 }
-.about-project {
-
+#browse {
+  display: block;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 230px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  /*width: 100%;*/
 }
 
-.aside-img {
+#browse-2 {
+  display: block;
+  position: absolute;
+  text-align: left;
+  float: left;
+  top: 400px;
+  bottom: 0;
+  color: white;
+  margin-left: 30px;
+  background-color:
+}
+
+.aside-img-1 {
   position: relative;
   max-width: 100%;
-  margin-top: 55px;
-  transform: scale(1, 1.2);
+  height: 250px;
+  /*margin-top: 55px;*/
+  /*transform: scale(1, 1.2);*/
   /*max-height: 100%;*/
+  margin: 20px 20px 5px 20px;
 }
+.aside-img-2 {
+  position: relative;
+  /*max-width: 100%;*/
+  height: 250px;
+  /*margin-top: 55px;*/
+  /*transform: scale(1, 1.2);*/
+  /*max-height: 100%;*/
+  margin: 0px 10px 20px 20px;
+  /*margin: 20px;*/
+}
+
+.side-section span {
+  background: rgba(0, 0, 0, 0.7);
+  letter-spacing: -1px;
+  padding: 7px;
+  margin-left: 5px;
+}
+
 
 .view-all {
   /*display: block;*/

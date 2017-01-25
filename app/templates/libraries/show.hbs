@@ -1,11 +1,11 @@
-<article class="small-11 small-centered columns">
+<article class="small-11 small-centered columns ">
 
 
 <h1>{{model.name}}</h1>
 <img src={{model.photo}} class="library-photo"/>
 
 <p>{{model.description}}</p>
-<ul>
+<ul class="results">
   <li>Location: {{model.city}},  {{model.state}}
   </li>
   <li>Zines available for Circulation?:
@@ -15,7 +15,7 @@
         No, but the collection is open to the public. Contact the librarian/organization for more information.
     {{/if}}
   </li>
-  <li>Website: {{model.url}}</li>
+  <li>Website: <a href={{ model.url}}> {{model.url}}</a></li>
 </ul>
 {{#link-to 'libraries.edit' model.id}}Edit Library Information for {{model.name}}  {{/link-to}}
 </article>

@@ -138,6 +138,10 @@ a:hover {
   display: block;
 }
 
+h6 {
+  text-align: center;
+}
+
 
 /*.associated-library {
   margin: 10px;

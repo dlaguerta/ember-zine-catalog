@@ -1,14 +1,34 @@
-<article class="small-10 small-centered columns">
+<body class="row">
+  <h1>About The Zine Dreams Catalog</h1>
+<article class="small-12 large-6 columns">
 
-  <h2>About Zine Dream Catalog</h2>
+  <img src="../../assets/images/zine_dreams_cat.jpg" alt="a kitty sleeping on a pillow, with red text spelling 'Zine Dreams'" class="zine-cat"/>
+  <h4>
+    <strong>TL;DR:</strong> The Zine Dreams Catalog is a web app developed during Dianne's month-long capstone project for Ada Developers' Academy. It aims to unify zine libraries from around the world, making it easier to find zines online.
+  </h4>
+  <h3>Personal Learning Goals </h3>
+    <ul>
+      <li>Learn to build an API using a NoSQL database (Mongodb) using Javascript (Node.js and Express.js)</li>
+      <li>Use a client-side MVC Framework to build a website from sratch (Ember.js)</li>
+      <li>Improve my understanding of Javascript and its many frameworks</li>
+      <li>Learn best practices for managing a NoSQL database and displaying its data</li>
+
+    </ul>
+
+    {{#link-to 'contact' class="button"}}
+    Contact Dianne
+    {{/link-to}}
+</article>
+<article class="small-12 large-6 columns">
+  <h2> Purpose </h2>
+  <p>Zines (DIY-magazines) are wonderful learning resources as well as physical snapshots of community, history, and culture. Many institutions (academic, nonprofit, or private) have begun to collect and catalog zines in order to archive them and subsequently make them available to the public. Though there are many groups collecting and cataloging zines, a consistent standard for cataloging among all zine libraries has yet to be developed and implemented. Nor is there a shared tool that meets the needs of every library’s collection and resources. In addition, zines themselves can be notoriously hard to catalog, as many zines don’t have full names for authors, publishing dates, or even titles.</p>
   <p>
-    The Zine Dream Catalog is a web app developed during as Dianne's month-long capstone project for Ada Developers' Academy.
+  A  Zine Catalog can help zine librarians find, share, and update a union catalog together. This project would be a study on how to build a database that could join different, existing zine collections (to start, the Queer Zine Archive Project and the Flywheel Zine Library) and to discover a way to bring these resources together without conforming to one set standard or schema. The web app would also allow users to search through the database. Eventually, the project will expand to allow authenticated users to edit, add, or update zines through a library affliliation.</p>
 
-  </p>
+<p> The Zine Dreams Catalog began as my capstone project during my time at the Ada Developer's Acedemy. In three weeks during January 2017, I developed the Zine Dream Catalog using a tech stack that was entirely new to me. To create my catalog, I seeded a Mongo database with zine metadata from the Flywheel Zine Library (Easthampton, MA) and the Queer Zine Archive Project (Milwaukee, MA). I then built a Node/Express API using Mongoose.js (ODM tool) to serve data to my client-side Ember app, which is what you're seeing today.</p>
 
-  {{#link-to 'contact' class="button"}}
-  Contact the Team
-  {{/link-to}}
+<p>To learn more about the technologies used to build this project, visit the github repositories for<a href="https://github.com/dlaguerta/zines-api">the API</a>and the<a href="https://github.com/dlaguerta/ember-zine-catalog">Ember app.</a></p>
 
 </article>
+</body>
 {{outlet}}

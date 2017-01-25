@@ -10,7 +10,9 @@
   </li>
   <li>Zines available for Circulation?:
     {{#if model.circulation}}
-        No, but collection open to the public
+        Yes, zines are available for checkout. Contact librarians for more information.
+        {{else}}
+        No, but the collection is open to the public. Contact the librarian/organization for more information.
     {{/if}}
   </li>
   <li>Website: {{model.url}}</li>

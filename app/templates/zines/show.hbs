@@ -6,42 +6,47 @@
     {{/if}}
   </h2>
   <img src={{model.photo}}/>
-<ul class="zine-metadata">
-    <li><strong>Creator:</strong> {{model.creator}}</li>
-    {{#if model.contributor}}
-    <li>Contributors: {{ model.contributor}}</li>
-      {{/if}}
 
-
-    <li>Subject/Genre: {{model.subject_genre}}</li>
-
-    {{#if model.date}}
-      <li>Date: {{model.date}}
-        {{#if circa_date}} (Circa) {{/if}}
-      </li>
-      {{else }}
-        Date: Unknown
-      {{/if}}
-    <li>Place of Publication: {{model.place_of_publication}}</li>
-
-    <li>
-      {{#if model.volume}} Volume: {{model.volume}}
-      {{/if}}
-    </li>
-    <li>
-      {{#if model.number}}  Number: {{model.number}}
-      {{/if}}
-    </li>
-
-    <li> Tags: {{model.tags}} </li>
-
-    <li>
-      Physical description: {{model.physical_description}}
-    </li>
-</ul>
 </section>
 
 <section class="associated-library offset-1 small-2 small-offset-5 large-3 large-offset-2 columns end">
+  <h2>Zine Information</h2>
+  <ul class="zine-metadata">
+      <li><strong>Creator:</strong> {{model.creator}}</li>
+      {{#if model.contributor}}
+      <li>Contributors: {{ model.contributor}}</li>
+        {{/if}}
+
+
+      <li>Subject/Genre: {{model.subject_genre}}</li>
+
+      {{#if model.date}}
+        <li>Date: {{model.date}}
+          {{#if circa_date}} (Circa) {{/if}}
+        </li>
+        {{else }}
+          Date: Unknown
+        {{/if}}
+
+      {{#if model.place_of_publication}}
+      <li>Place of Publication: {{model.place_of_publication}}</li>
+      {{/if}}
+      <li>
+        {{#if model.volume}} Volume: {{model.volume}}
+        {{/if}}
+      </li>
+      <li>
+        {{#if model.number}}  Number: {{model.number}}
+        {{/if}}
+      </li>
+
+      <li> Tags: {{model.tags}} </li>
+      {{#if model.physical_description}}
+      <li>
+        Physical description: {{model.physical_description}}
+      </li>
+      {{/if}}
+  </ul>
   <h2>Associated Library</h2>
   {{#link-to "libraries.show" model.libraries}}
   {{zine-contributors model.libraries}}

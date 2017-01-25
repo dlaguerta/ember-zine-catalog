@@ -125,7 +125,7 @@ a:hover {
   font-family: 'Cormorant Garamond';
   text-align: center;
   margin: 15px;
-
+  display: block;
 }
 
 .library-photo {
@@ -133,6 +133,11 @@ a:hover {
   margin: 0 auto;
   width: 50%;
 }
+
+.zine-photo {
+  display: block;
+}
+
 
 /*.associated-library {
   margin: 10px;

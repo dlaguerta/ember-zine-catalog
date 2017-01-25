@@ -2,16 +2,14 @@
 <article class="listing-cell">
 
   <ul class="zine-metadata">
-      <div class="photo-placeholder">
-        Zine Cover
-      </div>
+        <img src={{zine.photo}} class="zine-photo"/>
 
       <h4 class="zine-headings">{{#link-to "zines.show" zine}}{{zine.title}}{{#if zine.sub_title}} : {{zine.sub_title}}{{/if}}{{/link-to}}</h4>
       <li><b>Creator: </b> {{zine.creator}}</li>
       <li><b>Subject/Genre: </b> {{zine.subject_genre}}</li>
       <li><b>Content tags: </b>  {{zine.tags}}</li>
       <li><b>Associated Libraries: </b>
-        
+
         {{#link-to "libraries.show" zine.libraries}}
         {{zine-contributors zine.libraries}}
         {{/link-to}}

@@ -5,5 +5,7 @@ export default DS.Model.extend({
   state : DS.attr('string'),
   zines : DS.belongsTo('zine', {async: true}),
   description: DS.attr('string'),
-
+  photo: DS.attr('string'),
+  circulation: DS.attr('boolean'),
+  url : DS.attr('string')
 });

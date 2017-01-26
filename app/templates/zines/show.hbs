@@ -1,6 +1,6 @@
 <article class="row">
 
-<section class="show-listing small-2 large-5 columns">
+<section class="show-listing small-12 large-5 columns">
   <h2 class="title">{{model.title}}
     {{#if model.sub_title}} : {{model.sub_title}}
     {{/if}}
@@ -9,7 +9,7 @@
 
 </section>
 
-<section class="associated-library offset-1 small-2 small-offset-5 large-3 large-offset-2 columns end">
+<section class="associated-library offset-1 small-12  large-3 large-offset-2 columns end">
   <h2>Zine Information</h2>
   <ul class="zine-metadata">
       <li><strong>Creator:</strong> {{model.creator}}</li>
@@ -17,8 +17,9 @@
       <li>Contributors: {{ model.contributor}}</li>
         {{/if}}
 
-
+      {{#if model.subject_genre }}
       <li>Subject/Genre: {{model.subject_genre}}</li>
+      {{/if}}
 
       {{#if model.date}}
         <li>Date: {{model.date}}
@@ -47,11 +48,11 @@
       </li>
       {{/if}}
   </ul>
-  <h2>Associated Library</h2>
-  {{#link-to "libraries.show" model.libraries}}
+  <h2>Associated Library:</h2>
+    <h6>{{#link-to "libraries.show" model.libraries}}
   {{zine-contributors model.libraries}}
-  {{/link-to}}
-
+  {{/link-to}}  </h6>
+  <p>Zine is unavailable for check out at this time.</p>
 </section>
 
 </article>

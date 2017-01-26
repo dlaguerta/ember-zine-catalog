@@ -2,7 +2,7 @@
 <article class="listing-cell">
 
   <ul class="zine-metadata">
-        <img src={{zine.photo}} class="zine-photo"/>
+        {{#link-to 'zines.show' zine}}<img src={{zine.photo}} class="zine-photo"/>{{/link-to}}
 
       <h4 class="zine-headings">{{#link-to "zines.show" zine}}{{zine.title}}{{#if zine.sub_title}} : {{zine.sub_title}}{{/if}}{{/link-to}}</h4>
       <li><b>Creator: </b> {{zine.creator}}</li>

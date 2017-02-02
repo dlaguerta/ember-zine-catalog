@@ -1,7 +1,8 @@
-# ember-mongo
+# Zine Dreams Catalog (Ember Front-End)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The Zine Dreams Catalog is a project developed by Dianne Laguerta, inspired by the many zine librarians building a [zine union catalog](http://zinelibraries.info/zine-union-catalog/). It began as a capstone project during their time at the [Ada Developers Academy](wwww.adadevelopersacademy.org) This repo is dedicated to front-end application of the project, using Ember.
+
+To see the site in action, visit the [Zine Dream Catalog website](wwww.zinedreams.com). For a detailed plan of this project, read the [product plan](../capstone_product_plan.md). For the backend API that serves the Ember app, check out [this repo](https://github.com/dlaguerta/zines-api).
 
 ## Prerequisites
 
